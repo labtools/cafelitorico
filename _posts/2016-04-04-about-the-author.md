@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hellow world!"
+title: "Hellow world! this is a longer tittle"
 author: "JA"
 categories: Hola
 tags: [sample]
