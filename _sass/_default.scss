@@ -1,19 +1,31 @@
 /*
   Site container
+
+  The container is likely to hold the whole body
 */
 
 .container {
   width: $container-width;
+  height: 100vh; /* Added to modify the height*/
   margin-left: auto;
   margin-right: auto;
+  display: grid; /* Added to modify the display*/
+  grid-template-rows: auto 1fr auto; /* Not sure about this */
+
 }
 .container a {
   text-decoration: underline;
 }
+
+
+/*
+  The content wrapper only holds the posts and/or main content without the header and footer
+*/
+
 .content-wrapper {
   padding-top: $header-thickness+10px;
   margin: auto;
-  display: block;
+  display: block; 
   width: $container-width - 20px;
 }
 .content-wrapper h1 {
