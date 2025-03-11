@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "About the Author"
-author: "Paul Le"
-categories: facts
+title: "Hellow world!"
+author: "JA"
+categories: Hola
 tags: [sample]
-image:
+image: milhouse.gif
 ---
 
-Hi there! I'm Paul. I’m a physics major turned programmer. Ever since I first learned how to program while taking a scientific computing for physics course, I have pursued programming as a passion, and as a career. Check out [my personal website](https://www.lenpaul.com/) for more information on my other projects (including more Jekyll themes!), as well as some of my writing.
+Se acabó el cuento. Primer post de una categoría rara, el about.
