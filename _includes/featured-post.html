@@ -5,7 +5,7 @@
       <div class="post-info">
         <h2>{{ post.title }}</h2>
         <p>{% assign month = post.date | date: "%B" %}
-          {{ post.date | date: "%-d" }}  {{ site.data.locales.es.months[month] }}  {{ post.date | date: "%Y" }}</p>
+{{ post.date | date: "%-d" }}  {{ site.data.locales.es.months[month] }}  {{ post.date | date: "%Y" }}</p>
       </div>
     </div>
   
