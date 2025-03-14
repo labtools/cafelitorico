@@ -7,6 +7,19 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+
+  @media (max-width: $container-width) {
+    width: 95vw;
+
+  }
+  @media (max-width: 768px) {
+    width: 95vw;
+
+  }
+
+  @media (max-width: 480px) {
+    width: 100vw;
+  }
 }
 
 .post-info {
