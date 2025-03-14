@@ -1,40 +1,72 @@
 // Ensure header styles remain the same
 .site-header {
   min-height: 56px;
+
+
+  height: auto;
+
   width: $container-width;
   position: fixed;
-  background-color: rgb(20, 254, 133);
+  background-color: rgba(22, 171, 94, 0.221);
   box-shadow: 0 5px 6px -6px #bbb;
   z-index: 100;
 
   margin-left: auto;
   margin-right: auto;
+  
 
   display: flex;
   padding: 10px;
   overflow: hidden;
-
+  align-items: center;
+  
+  top: 10px;
   left: 0;
   right: 0;
 
-  box-sizing: border-box;
+  box-sizing: border-box; //This makes the size to true size, if not the content size is taken.
 
 }
+
+
+
 
 .menu-icon-container, .site-title-container {
   display: flex;
   align-items: center;
 }
 .menu-icon-container {
-  margin-right: auto;
   background-color: aqua;
+  justify-content: flex-start;
+  flex: 1;
+
+  height: 100%;
+  overflow: hidden;
+
+  
 }
 .site-title-container {
-  margin-left: auto;
-  background-color: blueviolet;
+  background-color: rgb(223, 226, 43);
+  overflow: hidden;
+  height: 100%;
+
+  flex: 2;
+  justify-content: flex-end;
+  //border: 2px solid red;  
+
 }
-.site-title-container img{
-max-height: $header-thickness;
+.site-branding{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  //border: 2px solid red;  
+}
+.site-branding img{
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  display: block; 
 
 }
 // Styles for mobile menu toggle button
