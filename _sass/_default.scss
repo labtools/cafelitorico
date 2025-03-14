@@ -6,11 +6,19 @@
 
 .container {
   width: $container-width;
-  height: 100vh; /* Added to modify the height*/
+  /* height: 100vh;  Added to modify the height*/
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   margin-left: auto;
   margin-right: auto;
-  display: grid; /* Added to modify the display*/
-  grid-template-rows: auto 1fr auto; /* Not sure about this */
+  
+  
+  /* display: grid;  Added to modify the display*/
+  /*  grid-template-rows: auto 1fr auto; 
+  The first row (auto) will be as tall as its content.
+	•	The middle row (1fr) will take up the remaining space.
+	•	The last row (auto) will also be as tall as its content. */
 
 }
 .container a {
@@ -26,8 +34,9 @@
   padding-top: $header-thickness + 24px;
   margin: auto;
   display: block; 
-  width: $container-width - 20px;
+  width: $container-width;
 
+  flex-grow: 1;
 }
 .content-wrapper h1 {
   margin: 20px 0px 5px;
@@ -43,5 +52,6 @@
     margin: auto;
     display: block;
     width: 95vw;
+    flex-grow: 1;
   }
 }

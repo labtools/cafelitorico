@@ -1,108 +1,104 @@
+// Ensure header styles remain the same
 .site-header {
   min-height: 56px;
   width: $container-width;
   position: fixed;
-  background-color: white;
+  background-color: rgb(20, 254, 133);
   box-shadow: 0 5px 6px -6px #bbb;
   z-index: 100;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  padding: 10px;
+  overflow: hidden;
+
+  left: 0;
+  right: 0;
+
+  box-sizing: border-box;
+
 }
-@media (max-width: $container-width) {
-  .site-header {
-    min-height: 70px; /* Original 56px for everything. Changed to 70px */
-    width: 95vw;
-    position: fixed;
-    background-color: white;
-    box-shadow: 0 5px 6px -6px #bbb;
-    z-index: 100;
-  }
+
+.menu-icon-container, .site-title-container {
+  display: flex;
+  align-items: center;
 }
-.site-header a {
+.menu-icon-container {
+  margin-right: auto;
+  background-color: aqua;
+}
+.site-title-container {
+  margin-left: auto;
+  background-color: blueviolet;
+}
+.site-title-container img{
+max-height: $header-thickness;
+
+}
+// Styles for mobile menu toggle button
+.menu-toggle {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 30px;
+  cursor: pointer;
+ 
+}
+
+.site-title-container{
+
+}
+
+
+///////////////////////////////////////////
+// Fullscreen menu styles
+.full-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9); // Dark overlay
+  display: none; // Initially hidden
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+}
+
+.full-menu .menu-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.full-menu .menu-link {
+  color: white;
+  font-size: 24px;
+  margin: 10px 0;
   text-decoration: none;
 }
 
-.site-title {
-  font-size: 26px;
-  font-weight: 400;
-  line-height: 56px;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding-left: 10px;
-  float: left;
+.full-menu .menu-link:hover {
+  text-decoration: underline;
 }
 
-.site-title img{
-  max-width: 100%;  /* Makes the image responsive */
-  height: auto;     /* Maintains aspect ratio */
-  max-height: 60px; /* Adjust to your desired height */
-  padding: 10px;
+// Close button for the menu
+.menu-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 28px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
-.menu-list {
-  line-height: $header-thickness;
-  float: center;
-  padding: 8px 0;
-}
-
-.menu-link {
-  padding: 5px 10px;
-}
-
-
-
-
-/*
-  Responsiveness with a dropdown menu
-*/
-
-@media (min-width: $container-width) {
-  .dropbtn {
-    display: none;
-  }
-  .dropdown-content {
-    display: none;
-  }
-}
 @media (max-width: $container-width) {
   .menu-list {
-    display: none;
-  }
-  .site-title {
-    padding-right: 0.25rem;
-  }
-  .dropbtn {
-    background-color: white;
-    color: black;
-    padding: 16px;
-    margin-top: 4px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  .dropdown-content a:hover {
-    background-color: #f1f1f1
-  }
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  .dropdown:hover .dropbtn {
-    background-color: #f1f1f1;
+    display: none; // Hide default menu on small screens
   }
 }
