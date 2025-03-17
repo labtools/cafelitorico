@@ -126,7 +126,7 @@
 
 // Close button for the menu
 .menu-close {
-  display:flex
+  display:flex;
   justify-content: flex-start;
   left: 40px;
   top: 40px;
@@ -137,7 +137,8 @@
   cursor: pointer;
 
   border: 2px solid red;
-  width: $container-width
+  width: $container-width;
+  
   @media (max-width: $container-width) {
     width: 95vw;
 
