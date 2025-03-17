@@ -14,4 +14,8 @@ Esto es una frase dos lineas por debajo.
 
 A ver si se puede.
 
+<<<<<<< HEAD
 # This is a title modified for the 12993871273912739 time
+=======
+# This is a title modified using spare 2 timesP
+>>>>>>> origin/main
