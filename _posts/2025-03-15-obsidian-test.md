@@ -13,3 +13,6 @@ image: test.jpg
 # Untitled 1
 
 Write your blog content here...
+
+
+THis is a bit of another page
