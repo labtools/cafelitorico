@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2025-03-27
+date: 2025-03-08
 title: Third try
 author: José Alberto
 categories: Work in progress
