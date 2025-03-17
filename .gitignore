@@ -5,7 +5,3 @@ Gemfile.lock
 .DS_Store
 .jekyll-cache
 *.gem
-
-_data
-_includes
-README.md
