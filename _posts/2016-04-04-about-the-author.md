@@ -15,3 +15,4 @@ Esto es una frase dos lineas por debajo.
 A ver si se puede.
 
 # This is a H1
+![[test.jpg]]
