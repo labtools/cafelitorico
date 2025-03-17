@@ -8,6 +8,7 @@ tags:
   - obsidian
   - great
   - test
+  - sample
 ---
 
 # Untitled
